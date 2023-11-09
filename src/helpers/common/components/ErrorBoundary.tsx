@@ -31,7 +31,7 @@ class ErrorBoundary extends Component<IErrorProps, IErrorState> {
       return <h1 style={{ color: 'red' }}>Sorry.. there was an error</h1>;
     }
 
-    return this.props.children;
+    return <>{this.props.children}</>;
   }
 }
 
