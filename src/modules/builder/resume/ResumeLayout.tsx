@@ -34,11 +34,11 @@ export const ResumeLayout = () => {
   let txt_color = "text-black"
 
   switch(theme) {
-    case "3":
+    case "2":
       bg_color = "bg-black"
       txt_color = "text-white"
       break
-    case "4":
+    case "3":
       bg_color = "bg-slate-200"
       //txt_color = "text-white"
       break

@@ -19,14 +19,14 @@ export const SYSTEM_COLORS: IThemeColor[] = [
   {
     backgroundColor: '#FFFFFF',
     fontColor: '#000000',
-    titleColor: '#217503',
+    titleColor: '#33af06',
     highlighterColor: '#F556E5',
     id: 3,
   },
   {
     backgroundColor: 'black',
     fontColor: 'white',
-    titleColor: 'white',
+    titleColor: '#505051',
     highlighterColor: 'white',
     id: 4,
   },
