@@ -23,6 +23,20 @@ export const SYSTEM_COLORS: IThemeColor[] = [
     highlighterColor: '#F556E5',
     id: 3,
   },
+  {
+    backgroundColor: 'black',
+    fontColor: 'white',
+    titleColor: 'white',
+    highlighterColor: 'white',
+    id: 4,
+  },
+  {
+    backgroundColor: '#FFFFFF',
+    fontColor: '#000000',
+    titleColor: '#b4b387',
+    highlighterColor: '#F556E5',
+    id: 5,
+  },
 ];
 
 export const AVAILABLE_TEMPLATES: ITemplate = {
@@ -31,6 +45,14 @@ export const AVAILABLE_TEMPLATES: ITemplate = {
     name: 'Modern Resume',
     thumbnail: '/templates/modern.png',
     component: dynamic(() => import('src/templates/modern/MordernTemplate'), {
+      ssr: false,
+    }),
+  },
+  modern2: {
+    id: 'modern2',
+    name: 'Modern Resume',
+    thumbnail: '/templates/modern.png',
+    component: dynamic(() => import('src/templates/modern2/MordernTemplate'), {
       ssr: false,
     }),
   },

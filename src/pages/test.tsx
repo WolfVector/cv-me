@@ -1,16 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import HomeLayout from 'src/modules/home/HomeLayout';
 import BuilderLayout from 'src/modules/builder/BuilderLayout';
-import { useSearchParams } from 'next/navigation'
 
-const HomePage: NextPage = () => {
-
+const Test: NextPage = () => {
   return (
     <div>
       <Head>
         <title>CV Me Please</title>
-        <meta name="description" content="Single Page Resume Builder" />
+        <meta name="description" content="CV Me Please" />
         <link rel="icon" type="image/png" href="/icons/resume-icon.png" />
       </Head>
 
@@ -19,4 +16,4 @@ const HomePage: NextPage = () => {
   );
 };
 
-export default HomePage;
+export default Test;

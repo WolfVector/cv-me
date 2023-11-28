@@ -7,7 +7,7 @@ const BuilderPage: NextPage = () => {
     <div>
       <Head>
         <title>CV Me Please</title>
-        <meta name="description" content="Single Page Resume Builder" />
+        <meta name="description" content="CV Me Please" />
         <link rel="icon" type="image/png" href="/icons/resume-icon.png" />
       </Head>
 

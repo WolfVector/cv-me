@@ -228,29 +228,44 @@
 
 			<script>
 				window.onload = function() {
-					const myTimeout = setTimeout(myGreeting, 5000);
+					const myTimeout = setTimeout(myGreeting, 3000);
 				};
 
 				function myGreeting() {
 					var spans = document.querySelectorAll('span');
 					
-					if(spans.length == 0) {
+					if(document.getElementById("p-9-box-194") == null) {
 						console.log("cargando otra vez")
 						const myTimeout = setTimeout(myGreeting, 3000);
 					}
 					else {
 						console.log("ya se cargo todo")
+						document.getElementById("p-9-box-185").addEventListener("click", function() {
+							window.parent.location.href = "/?theme=0"
+						})
+						document.getElementById("p-9-box-186").addEventListener("click", function() {
+							window.parent.location.href = "/?theme=1"
+						})
+						document.getElementById("p-9-box-187").addEventListener("click", function() {
+							window.parent.location.href = "/?theme=2"
+						})
+						document.getElementById("p-9-box-188").addEventListener("click", function() {
+							window.parent.location.href = "/?theme=3"
+						})
+						/*let index = 0
 					// Add a click event listener to each span
 						spans.forEach(function(span) {
 							//console.log(span.innerHTML)
 							if(span.innerHTML == "Vista Previa") {
 								span.addEventListener('click', function() {
-									window.parent.location.href = "/"
+									window.parent.location.href = "/?theme=" + index
 
 									// You can perform additional actions here
 								});
+
+								index++
 							}
-						});
+						});*/
 					}
 				}
 			</script>
